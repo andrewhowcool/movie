@@ -1,0 +1,239 @@
+/*資管108 B036060008 楊博名的自殺突擊隊宣傳網站*/
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+.nav ul{
+  display: inline-block;/*同一行*/
+}
+
+.nav li {
+  display: inline-block;/*同一行*/
+}
+
+.nav a {
+  color: #5a5a5a;/*字體顏色*/
+  font-size: 25px;/*字體大小*/
+  font-weight: bold;/*字體：厚*/
+  padding: 14px 20px;/*留白*/
+  text-transform: uppercase;/*大寫*/
+}
+
+.nav .pull-right{
+  margin-top: 0.7%;
+  display: block;
+}
+
+.nav img:hover{/*縮圖變化*/
+  transform:rotate(10deg) scale(1.2,1.2);/*旋轉10度*//*長寬放大1.2倍*/
+}
+
+.nav img{
+  -moz-transition: all 1s ;/*firefox轉場時間*/
+  -ms-transform: all 1s;/*IE*/
+  transition: all 1s;/*轉場時間*/
+  border:0;
+}
+
+.home_background, .intro_background, .cast_background, .video_background{
+  background-repeat: no-repeat;/*背景不重複*/
+  background-size: cover;/*放大到邊界*/
+}
+
+.home_background{
+  background-image:url("poster5.jpg");
+  width: 100%;
+  
+  background-attachment: fixed;
+  display: inline-block;
+}
+
+.intro_background{
+  background-image:url("poster5.jpg");
+  background-attachment: fixed;
+}
+
+.cast_background {
+  background-image:url("poster3a.jpg");
+  background-attachment: fixed;
+}
+
+.intro_background .container, .cast_background .container{
+  position: relative;/*相對位置*/
+}
+
+.intro_background img{
+  margin-right: 2%;
+  margin-top: 3%;
+  margin-bottom: 0.5%;
+  border-radius: 10px;
+  float: left;
+  height: 45%;
+  width: 35%;
+}
+
+.intro_background h1{
+  font-family: 'Shift', sans-serif;/*字體樣式*/
+  font-weight: bold;/*字體：厚*/
+  text-align: center;
+  font-size: 60px;
+}
+
+.intro_background p{
+  margin-top: 3%;
+  font-family: 'Shift', sans-serif;/*字體樣式*/
+  font-size: 30px;
+}
+
+.cast_background .row img:hover{
+  transform:scale(1.2,1.2);/*長寬放大1.2倍*/
+}
+
+.cast_background .row img{
+  height: 100%;
+  width: 100%;
+  border: 10px solid #FFFFFF;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  -moz-transition: all 1s ;/*firefox轉場時間*/
+  -ms-transform: all 1s;/*IE*/
+  transition: all 1s;/*轉場時間*/  
+}
+
+.cast div{
+  margin-bottom: 30%;
+}
+
+.cast_background .cast img{
+  margin-right: 5%;
+  float: left;
+  border: 10px solid #FFFFFF;
+  border-radius: 10px;
+  height: 30%;
+  width: 30%;
+}
+
+.cast_background .cast{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 1%;
+}
+
+.cast_background .cast p{
+  padding-top: 3%;
+  font-family: 'Shift', sans-serif;/*字體樣式*/
+  font-size: 30px;
+}
+
+.cast_background .cast a{
+  float: right;
+  font-size: 30px;
+  font-family: 'Shift', sans-serif;/*字體樣式*/
+}
+
+.thumbnail:hover{/*縮圖變化*/
+  transform:scale(1.05,1.05);/*長寬放大1.2倍*/
+}
+
+.thumbnail {
+  -moz-transition: all 1s ;/*firefox轉場時間*/
+  -ms-transform: all 1s;/*IE*/
+  transition: all 1s;/*轉場時間*/
+  margin-top: 30px;
+  
+}
+
+.home_background .poster1 img:hover{
+  transform:scale(1.1,1.1);
+}
+
+.home_background .poster1 img{
+  width: 100%;
+   -webkit-transition: all 1s ;
+    -moz-transition: all 1s ;/*firefox轉場時間*/
+    -ms-transform: all 1s;/*IE*/
+    transition: all 1s;/*轉場時間*/
+}
+
+.home_background .poster2 img{
+  width: 100%;
+}
+
+.video_background{
+  background-image: url("poster10.jpg");
+  display: inline-block;
+  width: 100%;
+}
+
+/*youtube*/
+.video-container iframe:hover{/*縮圖變化*/
+  /*transform:scale(2.5,2.2);*/
+  transform-origin:right;
+  transform:scale(1.8,1.8);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+/*  overflow: hidden;*//*測試*/
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 35%;
+    margin-left: 63%;
+    margin-top: 21%;
+    border-radius: 10px;
+    -webkit-transition: all 1s ;
+    -moz-transition: all 1s ;/*firefox轉場時間*/
+    -ms-transform: all 1s;/*IE*/
+    transition: all 1s;/*轉場時間*/
+}
+
+
+
+
+/*5 column*/
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-1-5 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+.col-sm-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
